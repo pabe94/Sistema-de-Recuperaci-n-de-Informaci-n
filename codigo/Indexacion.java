@@ -29,7 +29,7 @@ import org.apache.lucene.store.FSDirectory;
 
 /**
  *
- * @author salvador
+ * @author pablo
  */
 public class Indexacion {
     
@@ -62,7 +62,7 @@ public class Indexacion {
             // Store the index in memory:
             //Directory directory = new RAMDirectory();
             // en disco ... 
-            Directory directory = FSDirectory.open(Paths.get("/home/salvador/Escritorio/UGR/RI/practica-final/index"));
+            Directory directory = FSDirectory.open(Paths.get("/home/pablo/Escritorio/UGR/RI/practica-final/index"));
             IndexWriterConfig config = new IndexWriterConfig(analyzer);
             IndexWriter iwriter = new IndexWriter(directory, config);
             
